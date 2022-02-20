@@ -24,15 +24,22 @@ function App() {
         {
           myinfos.length > 0 && (myinfos.map((item, key)=>(
             <div key={key} className="intro">
-              <h1>Hi, I'm {item.name}({item.nickname})</h1>
-              <h1 className="job">{item.intro}</h1>
-              <h1>based in Thailand</h1>
+              <div>
+                <h1>Hi, I'm {item.name}({item.nickname})</h1>
+                <h1 className="job">{item.intro}</h1>
+                <h1>based in Thailand</h1>
+              </div>
+              <div className='l-buttom'>
+                <h1>Contact Me</h1>
+                <h2>Email: {item.email}</h2>
+                <h2>Phone: {item.phone}</h2>
+              </div>
             </div>
           )))
         }
       </div>
       <div className='right'>
-        <img src='./images/me.jpg'/>
+        <img src='../../assets/me.jpg' width={400}/>
       </div>
     </div>
   );

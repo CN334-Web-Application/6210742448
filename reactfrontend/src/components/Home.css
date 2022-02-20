@@ -1,7 +1,7 @@
 .intro {
-  padding-left: 27%;
-  padding-top: 20%;
-  color: whitesmoke
+  padding-top: 21%;
+  color: whitesmoke;
+  text-align: right;
 }
 
 .job {
@@ -10,7 +10,7 @@
 
 .left {
   display: grid;
-  width: 700px;
+  width: 50%;
 }
 
 .Home {
@@ -21,5 +21,13 @@
 }
 
 .right {
-  background-color: white;
+  background-color: rgb(29, 29, 29);
+  padding-top: 200px;
+  margin-left: 30px;
+}
+
+.l-buttom {
+  /* background-color: white; */
+  height: 348px;
+  padding-top: 50px;
 }
