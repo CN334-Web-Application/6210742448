@@ -8,9 +8,18 @@
   color: brown;
 }
 
-.Home {
+.left {
   display: grid;
+  width: 700px;
+}
+
+.Home {
+  display: flex;
   background-color: rgb(29, 29, 29);
   width: auto;
   height: 947px;
+}
+
+.right {
+  background-color: white;
 }

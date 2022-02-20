@@ -22,6 +22,5 @@ class MyinfoController extends Controller
             $myinfo = Myinfo::find($id);
             $myinfo->intro = $request->intro;
             $myinfo->save();
-            return response()->json(['status' => $Education->save()]);
     }
 }

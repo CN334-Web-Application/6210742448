@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="Home">
-      <div className=''>
+      <div className='left'>
         {
           myinfos.length > 0 && (myinfos.map((item, key)=>(
             <div key={key} className="intro">
@@ -30,6 +30,9 @@ function App() {
             </div>
           )))
         }
+      </div>
+      <div className='right'>
+        <img src='./images/me.jpg'/>
       </div>
     </div>
   );
