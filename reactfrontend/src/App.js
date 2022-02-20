@@ -1,28 +1,15 @@
-import './App.css';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import * as React from "react";
+import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
+
+import Home from './components/Home'
 
 function App() {
-  const [myinfos, setMyinfos] = useState([])
-
-  useEffect(() => {
-      async function getAllMyinfo() {
-        try {
-          const myinfos = await axios.get("http://127.0.0.1:8000/api/myinfo")
-          console.log("myinfos: ",myinfos)
-          setMyinfos(myinfos)
-        } catch(error) {
-          console.log(error)
-        }
-      }
-      getAllMyinfo();
-  }, [])
-
   return (
-    <div className="App">
-      <h1>This is frontend</h1>
-    </div>
-  );
+  <Router>
+    <Routes>
+      <Route exact path='/' element={<Home />} />
+    </Routes>
+  </Router>);
 }
 
 export default App;

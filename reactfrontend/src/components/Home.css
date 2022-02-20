@@ -1,0 +1,16 @@
+.intro {
+  padding-left: 27%;
+  padding-top: 20%;
+  color: whitesmoke
+}
+
+.job {
+  color: brown;
+}
+
+.Home {
+  display: grid;
+  background-color: rgb(29, 29, 29);
+  width: auto;
+  height: 947px;
+}
