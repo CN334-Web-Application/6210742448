@@ -233,9 +233,8 @@ img:hover {
 
 .container .card-contact .text-card .email h3, .container .card-contact .contentBx .phone h3{
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
-  text-transform: uppercase;
   letter-spacing: 2px;
   margin-right: 10px;
 }
