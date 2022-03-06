@@ -1,33 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
 .intro {
-  padding-top: 21%;
+  /* margin-top: 50%; */
+  /* background-color: antiquewhite; */
   color: whitesmoke;
-  text-align: right;
+  text-align: left;
+  height: 62.4vh;
 }
 
 .job {
-  color: brown;
+  color: rgb(40, 122, 199);
 }
 
 .left {
+  /* background-color: aqua; */
   display: grid;
-  width: 50%;
+  width: 30vw;
+  align-items: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.521), 0 6px 20px 0 rgba(0, 0, 0, 0.137);
 }
 
 .Home {
   display: flex;
   background-color: rgb(29, 29, 29);
-  width: auto;
-  height: 947px;
+  width: 65vw;
+  height: 87vh;
+  margin-left: 350px;
+  margin-top: 60px;
 }
 
 .right {
-  background-color: rgb(29, 29, 29);
-  padding-top: 200px;
+  /* background-color: red; */
   margin-left: 30px;
+  margin-top: 13vh;
 }
 
-.l-buttom {
+.r-buttom {
   /* background-color: white; */
   height: 348px;
   padding-top: 50px;
+}
+
+.hi {
+  display: flex;
+  background-color: rgb(26, 26, 26);
+  /* padding-bottom: 64px; */
+  position: relative;
+  height: 100vh;
+}
+
+.container{
+  position: relative;
+}
+
+.container .card-contact{
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  /* overflow: hidden; */
+}
+
+.container .card-contact:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2870dc;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card-contact:hover:before{
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card-contact:after{
+  content: 'OH';
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(93, 243, 243, 0.05)
+}
+
+.container .card-contact {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 400px;
+  transition: 0.5s;
+}
+
+.container .card-contact:hover {
+  top: 0%;
+  /* transform: translateY(0%); */
+    
+}
+
+.container .card-contact {
+  margin-top: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.container .card-contact .text-card{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .card-contact:hover .text-card{
+  height: 210px;
+}
+
+.container .card-contact .text-card h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  color: #fff;
+  margin: 0;
+}
+
+.container .card-contact .text-card .email, .container .card-contact .text-card .phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container .card-contact:hover .text-card .email{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container .card-contact:hover .text-card .phone{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container .card-contact .text-card .email h3, .container .card-contact .contentBx .phone h3{
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
 }

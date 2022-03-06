@@ -19,29 +19,45 @@ function App() {
   }, [])
 
   return (
-    <div className="Home">
-      <div className='left'>
-        {
-          myinfos.length > 0 && (myinfos.map((item, key)=>(
-            <div key={key} className="intro">
-              <div>
-                <h1>Hi, I'm {item.name}({item.nickname})</h1>
-                <h1 className="job">{item.intro}</h1>
-                <h1>based in Thailand</h1>
+    <div className='hi'>
+      <div className="Home">
+        <div className='left'>
+          <img src='../../assets/me.jpg' width={400}/>
+        </div>
+        <div className='right'>
+          {
+            myinfos.length > 0 && (myinfos.map((item, key)=>(
+              <div key={key} className="intro">
+                <div>
+                  <h1>Hi, I'm {item.name}({item.nickname})</h1>
+                  <h1 className="job">{item.intro}</h1>
+                  <h1>based in Thailand</h1>
+                </div>
+                
+                {/*<div className='r-buttom'>
+                  <h1>Contact Me</h1>
+                  <h2>Email: {item.email}</h2>
+                  <h2>Phone: {item.phone}</h2>
+                </div>*/}
+                <div className='container'>
+                  <div className='card-contact'>
+                    <div className='text-card'>
+                      <h2>Contact Me</h2>
+                      <div className='email'>
+                        <h3>Email: {item.email}</h3>
+                      </div>
+                      <div className='phone'>
+                        <h3>Phone: {item.phone}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className='l-buttom'>
-                <h1>Contact Me</h1>
-                <h2>Email: {item.email}</h2>
-                <h2>Phone: {item.phone}</h2>
-              </div>
-            </div>
-          )))
-        }
+            )))
+          }
+        </div>
       </div>
-      <div className='right'>
-        <img src='../../assets/me.jpg' width={400}/>
-      </div>
-    </div>
+    </div>      
   );
 }
 
