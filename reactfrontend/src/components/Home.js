@@ -30,7 +30,10 @@ function App() {
               <div key={key} className="intro">
                 <div>
                   <h1>Hi, I'm {item.name}({item.nickname})</h1>
-                  <h1 className="job">{item.intro}</h1>
+                  <div className='job'>
+                    <h1>{item.intro}</h1>
+                    <h1>{item.intro}</h1>
+                  </div>
                   <h1>based in Thailand</h1>
                 </div>
                 
